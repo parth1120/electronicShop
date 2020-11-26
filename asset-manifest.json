@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/electronicShop/static/css/main.14d99a84.chunk.css",
+    "main.js": "/electronicShop/static/js/main.ad3a07ac.chunk.js",
+    "main.js.map": "/electronicShop/static/js/main.ad3a07ac.chunk.js.map",
+    "runtime-main.js": "/electronicShop/static/js/runtime-main.1794e21d.js",
+    "runtime-main.js.map": "/electronicShop/static/js/runtime-main.1794e21d.js.map",
+    "static/css/2.e995eac1.chunk.css": "/electronicShop/static/css/2.e995eac1.chunk.css",
+    "static/js/2.8e20e14d.chunk.js": "/electronicShop/static/js/2.8e20e14d.chunk.js",
+    "static/js/2.8e20e14d.chunk.js.map": "/electronicShop/static/js/2.8e20e14d.chunk.js.map",
+    "static/js/3.6beeaef5.chunk.js": "/electronicShop/static/js/3.6beeaef5.chunk.js",
+    "static/js/3.6beeaef5.chunk.js.map": "/electronicShop/static/js/3.6beeaef5.chunk.js.map",
+    "index.html": "/electronicShop/index.html",
+    "static/css/2.e995eac1.chunk.css.map": "/electronicShop/static/css/2.e995eac1.chunk.css.map",
+    "static/css/main.14d99a84.chunk.css.map": "/electronicShop/static/css/main.14d99a84.chunk.css.map",
+    "static/js/2.8e20e14d.chunk.js.LICENSE.txt": "/electronicShop/static/js/2.8e20e14d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1794e21d.js",
+    "static/css/2.e995eac1.chunk.css",
+    "static/js/2.8e20e14d.chunk.js",
+    "static/css/main.14d99a84.chunk.css",
+    "static/js/main.ad3a07ac.chunk.js"
+  ]
+}
