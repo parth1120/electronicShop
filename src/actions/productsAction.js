@@ -1,4 +1,4 @@
-import { FILTER_PRODUCT, PRICE_FILTER_PRODUCT, PRODECT_LIST_FAIL, PRODECT_LIST_SUCCESS, PRODUCT_LIST_REQUEST, SEARCH_PRODUCT } from '../constants/productConstants'
+import { ADD_CART, FILTER_PRODUCT, PRICE_FILTER_PRODUCT, PRODECT_LIST_FAIL, PRODECT_LIST_SUCCESS, PRODUCT_LIST_REQUEST, SEARCH_PRODUCT } from '../constants/productConstants'
 import { getData } from '../utils/axios';
 
 export const productFetch = () => async (dispatch, getState) => {
@@ -39,5 +39,12 @@ export const priceFilterProduct = (maxMin) => (dispatch) => {
         type: PRICE_FILTER_PRODUCT,
         range: maxMin,
 
+    })
+}
+
+export const addCart = (productDetail) => (dispatch) => {
+    dispatch({
+        type: ADD_CART,
+        item: productDetail
     })
 }

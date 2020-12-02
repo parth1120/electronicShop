@@ -1,11 +1,12 @@
 
-import { FILTER_PRODUCT, PRICE_FILTER_PRODUCT, PRODECT_LIST_FAIL, PRODECT_LIST_SUCCESS, PRODUCT_LIST_REQUEST, SEARCH_PRODUCT } from '../constants/productConstants'
+import { ADD_CART, FILTER_PRODUCT, PRICE_FILTER_PRODUCT, PRODECT_LIST_FAIL, PRODECT_LIST_SUCCESS, PRODUCT_LIST_REQUEST, SEARCH_PRODUCT } from '../constants/productConstants'
 
 const initialState = {
     products: [],
     searchableProducts: [],
     pageNo: 0,
-    category: 'all'
+    category: 'all',
+    cart: []
 }
 
 export const productsReducers = (state = initialState, action) => {
@@ -23,6 +24,9 @@ export const productsReducers = (state = initialState, action) => {
                     t.Name === thing.Name
                 ))
             )
+            console.log(products);
+            products = products.sort((a, b) => b.Quantity - a.Quantity)
+            console.log(products);
             return {
                 ...state,
                 loading: false,
@@ -54,6 +58,14 @@ export const productsReducers = (state = initialState, action) => {
                 ...state,
                 products: state.searchableProducts.filter(product => product.Price >= action.range.min && product.Price <= action.range.max),
                 category: null,
+            }
+        case ADD_CART:
+            let carts = state.cart
+            carts.push(action.item)
+            console.log(carts);
+            return {
+                ...state,
+                cart: carts
             }
         default:
             return state
